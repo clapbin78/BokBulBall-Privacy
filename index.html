@@ -3,12 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <script>
-        var lang = navigator.language || navigator.userLanguage;
-        if (lang.startsWith('ko')) {
-            window.location.replace('privacy.html');
-        } else {
-            window.location.replace('privacy-en.html');
+        var lang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+        var map = {
+            'ko': 'privacy.html',
+            'ja': 'privacy-ja.html',
+            'zh': 'privacy-zh.html',
+            'es': 'privacy-es.html',
+            'fr': 'privacy-fr.html',
+            'de': 'privacy-de.html',
+            'pt': 'privacy-pt.html',
+            'id': 'privacy-id.html',
+            'th': 'privacy-th.html',
+            'vi': 'privacy-vi.html',
+            'ru': 'privacy-ru.html',
+            'ar': 'privacy-ar.html',
+            'hi': 'privacy-hi.html',
+            'it': 'privacy-it.html',
+            'tr': 'privacy-tr.html'
+        };
+        var target = 'privacy-en.html';
+        for (var key in map) {
+            if (lang.startsWith(key)) {
+                target = map[key];
+                break;
+            }
         }
+        window.location.replace(target);
     </script>
 </head>
 <body></body>
