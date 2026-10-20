@@ -50,8 +50,8 @@
     <h2>1. Topladığımız Kişisel Veriler</h2>
     <ul>
         <li><strong>Zorunlu:</strong> Cihaz tanımlayıcısı (Device UUID), Takma ad</li>
-        <li><strong>İsteğe bağlı:</strong> Anlık bildirim belirteci ve bildirim dili (ilan panosu bildirimlerine izin vermeniz halinde)</li>
-        <li><strong>Hizmet kullanımı sırasında otomatik olarak toplanan:</strong> IP adresi, Hizmet kullanım kayıtları (gönderi ve yorum geçmişi, ihbar ve yaptırım kayıtları vb.)</li>
+        <li><strong>İsteğe bağlı:</strong> Anlık bildirim belirteci, bildirim dili ve cihaz saat dilimi (ilan panosu bildirimlerine veya BokBulBall anlık bildirimlerine izin vermeniz halinde)</li>
+        <li><strong>Hizmet kullanımı sırasında otomatik olarak toplanan:</strong> IP adresi, Hizmet kullanım kayıtları (gönderi ve yorum geçmişi, ihbar ve yaptırım kayıtları vb.), anonim kullanım istatistikleri (uygulama sürümü, açılış, oyun ve özellik kullanım sayıları — bireylerin kimliğinin belirlenmesine imkan vermeyen toplu bilgiler)</li>
     </ul>
 
     <h2>2. Veri Toplama Amaçları</h2>
@@ -61,6 +61,8 @@
         <li>Sistem kararlılığı için günlük gönderi ve yorum limitlerin yönetimi</li>
         <li>Soruların işlenmesi ve hizmet bildirimlerinin iletilmesi</li>
         <li>Gönderilerinize ve yorumlarınıza yapılan yorumlar, beğeniler ve etiketlemeler hakkında bildirim gönderilmesi (Ayarlar'dan istediğiniz zaman kapatılabilir)</li>
+        <li>BokBulBall anlık bildirimlerinin (Hizmet ipuçları ve etkinlik haberleri) yerel saatinize göre gönderilmesi (Ayarlar'dan istediğiniz zaman kapatılabilir)</li>
+        <li>Hizmetin iyileştirilmesi amacıyla anonim kullanım istatistiklerinin analiz edilmesi</li>
         <li>Yürürlükteki yasalar uyarınca kolluk kuvvetleriyle iş birliği yapılması</li>
     </ul>
 
@@ -80,7 +82,7 @@
         <li><strong>Aktarılan veriler:</strong> Gönderi başlıkları, gönderi içeriği, yorum içeriği (yalnızca metin; cihaz kimlikleri gibi kişisel tanımlayıcılar aktarılmamaktadır)</li>
         <li><strong>Aktarım amacı:</strong> Uygunsuz içeriğin otomatik olarak tespit edilmesi ve filtrelenmesi</li>
         <li>OpenAI'ın veri işleme uygulamaları hakkında bilgi için lütfen <a href="https://openai.com/privacy" target="_blank">OpenAI Gizlilik Politikası</a>'na başvurun.</li>
-        <li>Bildirimlerin iletilmesi amacıyla anlık bildirim belirteçleri Google LLC (Firebase Cloud Messaging) ve Apple Inc. (Apple Push Notification service) aracılığıyla işlenmektedir. Bildirim içeriği, yazarın takma adını ve gönderi veya yorumun bir kısmını içerebilir.</li>
+        <li>Bildirimlerin iletilmesi amacıyla anlık bildirim belirteçleri Google LLC (Firebase Cloud Messaging) ve Apple Inc. (Apple Push Notification service) aracılığıyla işlenmektedir. Bildirim içeriği, yazarın takma adını ve gönderi veya yorumun bir kısmını içerebilir. BokBulBall anlık bildirimleri dile ve saat dilimine göre alıcı gruplarına (konulara) gönderilir ve sunucularımızda bireysel alıcı listesi tutulmaz.</li>
     </ul>
 
     <h2>6. Haklarınız (GDPR / CCPA)</h2>
