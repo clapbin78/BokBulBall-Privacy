@@ -51,7 +51,7 @@
     <ul>
         <li><strong>Required:</strong> Device identifier (Device UUID), Nickname</li>
         <li><strong>Optional:</strong> Push notification token, notification language, device time zone, and the device’s country/region setting (if you allow board notifications or BokBulBall push — location data is not collected)</li>
-        <li><strong>Automatically collected:</strong> IP address, Service usage records (post and comment history, report and sanction records, etc.), anonymous usage statistics (app version, country/region setting, counts of launches, games, and feature use — aggregated information that cannot identify individuals)</li>
+        <li><strong>Automatically collected:</strong> IP address, Service usage records (post and comment history, report and sanction records, etc.), anonymous usage statistics (app version, country/region setting, counts of launches, games, and feature use — aggregated information that cannot identify individuals), BokBulBall push delivery records (send time, send result)</li>
     </ul>
 
     <h2>2. Purposes of Data Collection</h2>
@@ -70,6 +70,8 @@
     <ul>
         <li>Your personal data will be deleted without delay upon service termination or upon your request (account deletion, app removal, etc.).</li>
         <li>Exception: To prevent abuse and circumvention of sanctions through voluntary withdrawal, device identifiers and sanction records of sanctioned users will be retained for 6 months from the date of sanction and then deleted.</li>
+        <li>BokBulBall push subscription information (push notification token, notification language, time zone, and country/region setting) is deleted immediately when you turn off BokBulBall push, and is automatically deleted if you do not use the app for 90 days.</li>
+        <li>BokBulBall push delivery records (device identifier, send time, send result) are retained for 90 days for the purposes of delivery verification and service improvement, and are then automatically deleted.</li>
         <li>Additionally, where required by applicable law, personal data may be retained for the period specified by such law.</li>
     </ul>
 
@@ -82,7 +84,7 @@
         <li><strong>Data transmitted:</strong> Post titles, post content, comment content (text only; no personal identifiers such as device IDs are transmitted)</li>
         <li><strong>Purpose:</strong> Automatic detection and filtering of inappropriate content</li>
         <li>For information about OpenAI's data handling practices, please refer to the <a href="https://openai.com/privacy" target="_blank">OpenAI Privacy Policy</a>.</li>
-        <li>To deliver notifications, push notification tokens are processed through Google LLC (Firebase Cloud Messaging) and Apple Inc. (Apple Push Notification service). Notification content may include the author's nickname and part of the post or comment. BokBulBall push is sent to recipient groups (topics) by language, time zone, and country, and we do not keep a list of individual recipients on our servers.</li>
+        <li>To deliver notifications, push notification tokens are processed through Google LLC (Firebase Cloud Messaging) and Apple Inc. (Apple Push Notification service). Notification content may include the author's nickname and part of the post or comment. For devices that have turned on BokBulBall push, we store the push notification token, notification language, time zone, and country/region setting on our servers in order to send it to each device at its local time.</li>
     </ul>
 
     <h2>6. Your Rights (GDPR / CCPA)</h2>

@@ -51,7 +51,7 @@
     <ul>
         <li><strong>Obrigatórios:</strong> Identificador do dispositivo (UUID do dispositivo), apelido</li>
         <li><strong>Opcionais:</strong> Token de notificação push, idioma das notificações, fuso horário do dispositivo e configuração de país/região do dispositivo (caso você permita as notificações do quadro de avisos ou as notificações push do BokBulBall — dados de localização não são coletados)</li>
-        <li><strong>Coletados automaticamente durante o uso do Serviço:</strong> Endereço IP, registros de uso do Serviço (histórico de publicações e comentários, registros de denúncias e sanções, etc.), estatísticas de uso anônimas (versão do aplicativo, configuração de país/região, número de aberturas, partidas e uso de recursos — informações agregadas que não permitem identificar pessoas)</li>
+        <li><strong>Coletados automaticamente durante o uso do Serviço:</strong> Endereço IP, registros de uso do Serviço (histórico de publicações e comentários, registros de denúncias e sanções, etc.), estatísticas de uso anônimas (versão do aplicativo, configuração de país/região, número de aberturas, partidas e uso de recursos — informações agregadas que não permitem identificar pessoas), registros de envio das notificações push do BokBulBall (horário de envio, resultado do envio)</li>
     </ul>
 
     <h2>2. Finalidades da coleta de dados</h2>
@@ -70,6 +70,8 @@
     <ul>
         <li>Seus dados pessoais serão excluídos sem demora após o encerramento do serviço ou mediante sua solicitação (exclusão de conta, remoção do aplicativo, etc.).</li>
         <li>Exceção: Para prevenir abusos e a evasão de sanções por meio de desligamento voluntário, os identificadores de dispositivo e os registros de sanção de usuários sancionados serão retidos por 6 meses a partir da data da sanção e, em seguida, excluídos.</li>
+        <li>As informações de recebimento das notificações push do BokBulBall (token de notificação push, idioma das notificações, fuso horário e configuração de país/região) são excluídas imediatamente quando você desativa as notificações push do BokBulBall e excluídas automaticamente caso você não use o aplicativo por 90 dias.</li>
+        <li>Os registros de envio das notificações push do BokBulBall (identificador do dispositivo, horário de envio, resultado do envio) são retidos por 90 dias para fins de confirmação do envio e melhoria do Serviço e, em seguida, excluídos automaticamente.</li>
         <li>Além disso, quando exigido pela legislação aplicável, os dados pessoais poderão ser retidos pelo período especificado pela respectiva lei.</li>
     </ul>
 
@@ -82,7 +84,7 @@
         <li><strong>Dados transmitidos:</strong> Títulos de publicações, conteúdo de publicações, conteúdo de comentários (apenas texto; nenhum identificador pessoal, como IDs de dispositivo, é transmitido)</li>
         <li><strong>Finalidade da transmissão:</strong> Detecção e filtragem automática de conteúdo inadequado</li>
         <li>Para informações sobre as práticas de tratamento de dados da OpenAI, consulte a <a href="https://openai.com/privacy" target="_blank">Política de Privacidade da OpenAI</a>.</li>
-        <li>Para o envio de notificações, os tokens de notificação push são processados por meio da Google LLC (Firebase Cloud Messaging) e da Apple Inc. (Apple Push Notification service). O conteúdo das notificações pode incluir o apelido do autor e parte da publicação ou do comentário. As notificações push do BokBulBall são enviadas a grupos de destinatários (tópicos) por idioma, fuso horário e país, e não mantemos uma lista de destinatários individuais em nossos servidores.</li>
+        <li>Para o envio de notificações, os tokens de notificação push são processados por meio da Google LLC (Firebase Cloud Messaging) e da Apple Inc. (Apple Push Notification service). O conteúdo das notificações pode incluir o apelido do autor e parte da publicação ou do comentário. Para as notificações push do BokBulBall, armazenamos em nossos servidores o token de notificação push, o idioma das notificações, o fuso horário e a configuração de país/região dos dispositivos que ativaram o recebimento, a fim de enviá-las a cada dispositivo no seu horário local.</li>
     </ul>
 
     <h2>6. Seus direitos (RGPD / CCPA)</h2>

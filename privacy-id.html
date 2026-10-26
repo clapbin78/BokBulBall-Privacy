@@ -51,7 +51,7 @@
     <ul>
         <li><strong>Wajib:</strong> Pengenal perangkat (UUID Perangkat), nama panggilan</li>
         <li><strong>Opsional:</strong> Token notifikasi push, bahasa notifikasi, zona waktu perangkat, dan pengaturan negara/wilayah perangkat (jika Anda mengizinkan notifikasi papan pengumuman atau push BokBulBall — data lokasi tidak dikumpulkan)</li>
-        <li><strong>Dikumpulkan secara otomatis selama penggunaan Layanan:</strong> Alamat IP, catatan penggunaan Layanan (riwayat postingan dan komentar, catatan laporan dan sanksi, dll.), statistik penggunaan anonim (versi aplikasi, pengaturan negara/wilayah, jumlah peluncuran, permainan, dan penggunaan fitur — informasi agregat yang tidak dapat mengidentifikasi individu)</li>
+        <li><strong>Dikumpulkan secara otomatis selama penggunaan Layanan:</strong> Alamat IP, catatan penggunaan Layanan (riwayat postingan dan komentar, catatan laporan dan sanksi, dll.), statistik penggunaan anonim (versi aplikasi, pengaturan negara/wilayah, jumlah peluncuran, permainan, dan penggunaan fitur — informasi agregat yang tidak dapat mengidentifikasi individu), catatan pengiriman push BokBulBall (waktu pengiriman, hasil pengiriman)</li>
     </ul>
 
     <h2>2. Tujuan Pengumpulan Data</h2>
@@ -70,6 +70,8 @@
     <ul>
         <li>Data pribadi Anda akan dihapus tanpa penundaan setelah penghentian layanan atau atas permintaan Anda (penghapusan akun, penghapusan aplikasi, dll.).</li>
         <li>Pengecualian: Untuk mencegah penyalahgunaan dan penghindaran sanksi melalui pengunduran diri sukarela, pengenal perangkat dan catatan sanksi pengguna yang dikenai sanksi akan disimpan selama 6 bulan sejak tanggal sanksi dan kemudian dihapus.</li>
+        <li>Informasi penerimaan push BokBulBall (token notifikasi push, bahasa notifikasi, zona waktu, pengaturan negara/wilayah) akan segera dihapus saat Anda menonaktifkan push BokBulBall, dan akan dihapus secara otomatis jika Anda tidak menggunakan aplikasi selama 90 hari.</li>
+        <li>Catatan pengiriman push BokBulBall (pengenal perangkat, waktu pengiriman, hasil pengiriman) disimpan selama 90 hari untuk tujuan konfirmasi pengiriman dan peningkatan Layanan, kemudian dihapus secara otomatis.</li>
         <li>Selain itu, apabila diwajibkan oleh hukum yang berlaku, data pribadi dapat disimpan selama jangka waktu yang ditentukan oleh hukum tersebut.</li>
     </ul>
 
@@ -82,7 +84,7 @@
         <li><strong>Data yang dikirimkan:</strong> Judul postingan, isi postingan, isi komentar (hanya teks; tidak ada pengenal pribadi seperti ID perangkat yang dikirimkan)</li>
         <li><strong>Tujuan pengiriman:</strong> Deteksi dan penyaringan otomatis konten yang tidak pantas</li>
         <li>Untuk informasi tentang praktik penanganan data OpenAI, silakan merujuk pada <a href="https://openai.com/privacy" target="_blank">Kebijakan Privasi OpenAI</a>.</li>
-        <li>Untuk mengirimkan notifikasi, token notifikasi push diproses melalui Google LLC (Firebase Cloud Messaging) dan Apple Inc. (Apple Push Notification service). Isi notifikasi dapat mencakup nama panggilan penulis dan sebagian isi postingan atau komentar. Push BokBulBall dikirimkan ke grup penerima (topik) berdasarkan bahasa, zona waktu, dan negara, dan kami tidak menyimpan daftar penerima perorangan di server kami.</li>
+        <li>Untuk mengirimkan notifikasi, token notifikasi push diproses melalui Google LLC (Firebase Cloud Messaging) dan Apple Inc. (Apple Push Notification service). Isi notifikasi dapat mencakup nama panggilan penulis dan sebagian isi postingan atau komentar. Untuk push BokBulBall, kami menyimpan token notifikasi push, bahasa notifikasi, zona waktu, dan pengaturan negara/wilayah dari perangkat yang mengaktifkan penerimaan di server kami agar notifikasi dapat dikirimkan ke setiap perangkat sesuai waktu setempatnya.</li>
     </ul>
 
     <h2>6. Hak-Hak Anda (GDPR / CCPA)</h2>

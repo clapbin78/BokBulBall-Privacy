@@ -51,7 +51,7 @@
     <ul>
         <li><strong>Bắt buộc:</strong> Mã định danh thiết bị (Device UUID), Biệt danh</li>
         <li><strong>Tùy chọn:</strong> Mã thông báo đẩy (push token), ngôn ngữ thông báo, múi giờ của thiết bị và cài đặt quốc gia/khu vực của thiết bị (nếu bạn cho phép thông báo bảng tin hoặc thông báo đẩy BokBulBall — không thu thập dữ liệu vị trí)</li>
-        <li><strong>Được thu thập tự động trong quá trình sử dụng Dịch vụ:</strong> Địa chỉ IP, Nhật ký sử dụng dịch vụ (lịch sử bài đăng và bình luận, hồ sơ báo cáo và xử phạt, v.v.), thống kê sử dụng ẩn danh (phiên bản ứng dụng, cài đặt quốc gia/khu vực, số lần khởi chạy, chơi game và sử dụng tính năng — thông tin tổng hợp không thể nhận dạng cá nhân)</li>
+        <li><strong>Được thu thập tự động trong quá trình sử dụng Dịch vụ:</strong> Địa chỉ IP, Nhật ký sử dụng dịch vụ (lịch sử bài đăng và bình luận, hồ sơ báo cáo và xử phạt, v.v.), thống kê sử dụng ẩn danh (phiên bản ứng dụng, cài đặt quốc gia/khu vực, số lần khởi chạy, chơi game và sử dụng tính năng — thông tin tổng hợp không thể nhận dạng cá nhân), nhật ký gửi thông báo đẩy BokBulBall (thời điểm gửi, kết quả gửi)</li>
     </ul>
 
     <h2>2. Mục đích thu thập dữ liệu</h2>
@@ -70,6 +70,8 @@
     <ul>
         <li>Dữ liệu cá nhân của bạn sẽ được xóa ngay khi chấm dứt dịch vụ hoặc theo yêu cầu của bạn (xóa tài khoản, gỡ ứng dụng, v.v.).</li>
         <li>Ngoại lệ: Để ngăn chặn lạm dụng và việc lẩn tránh xử phạt thông qua tự nguyện rút khỏi dịch vụ, mã định danh thiết bị và hồ sơ xử phạt của người dùng bị xử phạt sẽ được lưu giữ trong 6 tháng kể từ ngày xử phạt, sau đó sẽ được xóa.</li>
+        <li>Thông tin nhận thông báo đẩy BokBulBall (mã thông báo đẩy, ngôn ngữ thông báo, múi giờ, cài đặt quốc gia/khu vực) sẽ được xóa ngay khi bạn tắt thông báo đẩy BokBulBall và sẽ tự động được xóa nếu bạn không sử dụng ứng dụng trong 90 ngày.</li>
+        <li>Nhật ký gửi thông báo đẩy BokBulBall (mã định danh thiết bị, thời điểm gửi, kết quả gửi) được lưu giữ trong 90 ngày nhằm mục đích xác nhận việc gửi và cải thiện Dịch vụ, sau đó sẽ tự động được xóa.</li>
         <li>Ngoài ra, trong trường hợp pháp luật hiện hành yêu cầu, dữ liệu cá nhân có thể được lưu giữ trong thời hạn do pháp luật đó quy định.</li>
     </ul>
 
@@ -82,7 +84,7 @@
         <li><strong>Dữ liệu được truyền:</strong> Tiêu đề bài đăng, nội dung bài đăng, nội dung bình luận (chỉ văn bản; không có thông tin nhận dạng cá nhân như mã thiết bị được truyền đi)</li>
         <li><strong>Mục đích truyền:</strong> Tự động phát hiện và lọc nội dung không phù hợp</li>
         <li>Để biết thông tin về cách OpenAI xử lý dữ liệu, vui lòng tham khảo <a href="https://openai.com/privacy" target="_blank">Chính sách Quyền riêng tư của OpenAI</a>.</li>
-        <li>Để gửi thông báo, mã thông báo đẩy được xử lý thông qua Google LLC (Firebase Cloud Messaging) và Apple Inc. (Apple Push Notification service). Nội dung thông báo có thể bao gồm biệt danh của tác giả và một phần bài đăng hoặc bình luận. Thông báo đẩy BokBulBall được gửi đến các nhóm người nhận (chủ đề) theo ngôn ngữ, múi giờ và quốc gia, và chúng tôi không lưu danh sách người nhận riêng lẻ trên máy chủ.</li>
+        <li>Để gửi thông báo, mã thông báo đẩy được xử lý thông qua Google LLC (Firebase Cloud Messaging) và Apple Inc. (Apple Push Notification service). Nội dung thông báo có thể bao gồm biệt danh của tác giả và một phần bài đăng hoặc bình luận. Đối với thông báo đẩy BokBulBall, chúng tôi lưu trữ mã thông báo đẩy, ngôn ngữ thông báo, múi giờ và cài đặt quốc gia/khu vực của các thiết bị đã bật nhận thông báo trên máy chủ để gửi thông báo đến từng thiết bị theo giờ địa phương của thiết bị đó.</li>
     </ul>
 
     <h2>6. Quyền của bạn (GDPR / CCPA)</h2>

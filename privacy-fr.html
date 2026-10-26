@@ -51,7 +51,7 @@
     <ul>
         <li><strong>Obligatoires :</strong> Identifiant de l'appareil (UUID de l'appareil), pseudonyme</li>
         <li><strong>Facultatives :</strong> Jeton de notification push, langue des notifications, fuseau horaire de l'appareil et paramètre pays/région de l'appareil (si vous autorisez les notifications du tableau d'affichage ou les notifications push BokBulBall — aucune donnée de localisation n'est collectée)</li>
-        <li><strong>Collectées automatiquement lors de l'utilisation du Service :</strong> Adresse IP, registres d'utilisation du Service (historique des publications et commentaires, registres des signalements et sanctions, etc.), statistiques d'utilisation anonymes (version de l'application, paramètre pays/région, nombre de lancements, de parties et d'utilisations des fonctionnalités — informations agrégées ne permettant pas d'identifier les personnes)</li>
+        <li><strong>Collectées automatiquement lors de l'utilisation du Service :</strong> Adresse IP, registres d'utilisation du Service (historique des publications et commentaires, registres des signalements et sanctions, etc.), statistiques d'utilisation anonymes (version de l'application, paramètre pays/région, nombre de lancements, de parties et d'utilisations des fonctionnalités — informations agrégées ne permettant pas d'identifier les personnes), registres d'envoi des notifications push BokBulBall (heure d'envoi, résultat de l'envoi)</li>
     </ul>
 
     <h2>2. Finalités de la collecte des données</h2>
@@ -70,6 +70,8 @@
     <ul>
         <li>Vos données personnelles seront supprimées sans délai à la fin du service ou à votre demande (suppression du compte, désinstallation de l'application, etc.).</li>
         <li>Exception : Afin de prévenir les abus et le contournement des sanctions par un retrait volontaire, les identifiants d'appareil et les registres de sanctions des utilisateurs sanctionnés seront conservés pendant 6 mois à compter de la date de la sanction, puis supprimés.</li>
+        <li>Les informations de réception des notifications push BokBulBall (jeton de notification push, langue des notifications, fuseau horaire et paramètre pays/région) sont supprimées immédiatement lorsque vous désactivez les notifications push BokBulBall, et sont automatiquement supprimées si vous n'utilisez pas l'application pendant 90 jours.</li>
+        <li>Les registres d'envoi des notifications push BokBulBall (identifiant de l'appareil, heure d'envoi, résultat de l'envoi) sont conservés pendant 90 jours à des fins de vérification de l'envoi et d'amélioration du Service, puis automatiquement supprimés.</li>
         <li>En outre, lorsque la loi applicable l'exige, les données personnelles peuvent être conservées pendant la durée prévue par ladite loi.</li>
     </ul>
 
@@ -82,7 +84,7 @@
         <li><strong>Données transmises :</strong> Titres des publications, contenu des publications, contenu des commentaires (texte uniquement ; aucun identifiant personnel tel que les identifiants d'appareil n'est transmis)</li>
         <li><strong>Finalité de la transmission :</strong> Détection et filtrage automatiques des contenus inappropriés</li>
         <li>Pour plus d'informations sur les pratiques de traitement des données d'OpenAI, veuillez consulter la <a href="https://openai.com/privacy" target="_blank">Politique de confidentialité d'OpenAI</a>.</li>
-        <li>Pour l'envoi des notifications, les jetons de notification push sont traités par l'intermédiaire de Google LLC (Firebase Cloud Messaging) et d'Apple Inc. (Apple Push Notification service). Le contenu des notifications peut inclure le pseudonyme de l'auteur et une partie de la publication ou du commentaire. Les notifications push BokBulBall sont envoyées à des groupes de destinataires (sujets) par langue, par fuseau horaire et par pays, et nous ne conservons aucune liste de destinataires individuels sur nos serveurs.</li>
+        <li>Pour l'envoi des notifications, les jetons de notification push sont traités par l'intermédiaire de Google LLC (Firebase Cloud Messaging) et d'Apple Inc. (Apple Push Notification service). Le contenu des notifications peut inclure le pseudonyme de l'auteur et une partie de la publication ou du commentaire. Pour les appareils ayant activé les notifications push BokBulBall, nous conservons sur nos serveurs le jeton de notification push, la langue des notifications, le fuseau horaire et le paramètre pays/région, afin d'envoyer les notifications à chaque appareil à son heure locale.</li>
     </ul>
 
     <h2>6. Vos droits (RGPD / CCPA)</h2>

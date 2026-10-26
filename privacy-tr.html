@@ -51,7 +51,7 @@
     <ul>
         <li><strong>Zorunlu:</strong> Cihaz tanımlayıcısı (Device UUID), Takma ad</li>
         <li><strong>İsteğe bağlı:</strong> Anlık bildirim belirteci, bildirim dili, cihaz saat dilimi ve cihazın ülke/bölge ayarı (ilan panosu bildirimlerine veya BokBulBall anlık bildirimlerine izin vermeniz halinde — konum verisi toplanmaz)</li>
-        <li><strong>Hizmet kullanımı sırasında otomatik olarak toplanan:</strong> IP adresi, Hizmet kullanım kayıtları (gönderi ve yorum geçmişi, ihbar ve yaptırım kayıtları vb.), anonim kullanım istatistikleri (uygulama sürümü, ülke/bölge ayarı, açılış, oyun ve özellik kullanım sayıları — bireylerin kimliğinin belirlenmesine imkan vermeyen toplu bilgiler)</li>
+        <li><strong>Hizmet kullanımı sırasında otomatik olarak toplanan:</strong> IP adresi, Hizmet kullanım kayıtları (gönderi ve yorum geçmişi, ihbar ve yaptırım kayıtları vb.), anonim kullanım istatistikleri (uygulama sürümü, ülke/bölge ayarı, açılış, oyun ve özellik kullanım sayıları — bireylerin kimliğinin belirlenmesine imkan vermeyen toplu bilgiler), BokBulBall anlık bildirim gönderim kayıtları (gönderim zamanı, gönderim sonucu)</li>
     </ul>
 
     <h2>2. Veri Toplama Amaçları</h2>
@@ -70,6 +70,8 @@
     <ul>
         <li>Kişisel verileriniz, hizmetin sona ermesi üzerine veya talebiniz doğrultusunda (hesap silme, uygulama kaldırma vb.) gecikmeksizin silinecektir.</li>
         <li>İstisna: Gönüllü çekilme yoluyla kötüye kullanımın ve yaptırımların atlatılmasının önlenmesi amacıyla, yaptırım uygulanan kullanıcıların cihaz tanımlayıcıları ve yaptırım kayıtları, yaptırım tarihinden itibaren 6 ay süreyle saklanacak ve ardından silinecektir.</li>
+        <li>BokBulBall anlık bildirim alım bilgileri (anlık bildirim belirteci, bildirim dili, saat dilimi, ülke/bölge ayarı), BokBulBall anlık bildirimlerini kapattığınızda derhal silinir ve uygulama 90 gün boyunca kullanılmazsa otomatik olarak silinir.</li>
+        <li>BokBulBall anlık bildirim gönderim kayıtları (cihaz tanımlayıcısı, gönderim zamanı, gönderim sonucu), gönderimin doğrulanması ve Hizmetin iyileştirilmesi amacıyla 90 gün süreyle saklanır ve ardından otomatik olarak silinir.</li>
         <li>Ayrıca, yürürlükteki yasaların gerektirdiği durumlarda kişisel veriler, ilgili yasanın öngördüğü süre boyunca saklanabilir.</li>
     </ul>
 
@@ -82,7 +84,7 @@
         <li><strong>Aktarılan veriler:</strong> Gönderi başlıkları, gönderi içeriği, yorum içeriği (yalnızca metin; cihaz kimlikleri gibi kişisel tanımlayıcılar aktarılmamaktadır)</li>
         <li><strong>Aktarım amacı:</strong> Uygunsuz içeriğin otomatik olarak tespit edilmesi ve filtrelenmesi</li>
         <li>OpenAI'ın veri işleme uygulamaları hakkında bilgi için lütfen <a href="https://openai.com/privacy" target="_blank">OpenAI Gizlilik Politikası</a>'na başvurun.</li>
-        <li>Bildirimlerin iletilmesi amacıyla anlık bildirim belirteçleri Google LLC (Firebase Cloud Messaging) ve Apple Inc. (Apple Push Notification service) aracılığıyla işlenmektedir. Bildirim içeriği, yazarın takma adını ve gönderi veya yorumun bir kısmını içerebilir. BokBulBall anlık bildirimleri dile, saat dilimine ve ülkeye göre alıcı gruplarına (konulara) gönderilir ve sunucularımızda bireysel alıcı listesi tutulmaz.</li>
+        <li>Bildirimlerin iletilmesi amacıyla anlık bildirim belirteçleri Google LLC (Firebase Cloud Messaging) ve Apple Inc. (Apple Push Notification service) aracılığıyla işlenmektedir. Bildirim içeriği, yazarın takma adını ve gönderi veya yorumun bir kısmını içerebilir. BokBulBall anlık bildirimleri için, bildirimleri açmış olan cihazların anlık bildirim belirteci, bildirim dili, saat dilimi ve ülke/bölge ayarı sunucularımızda saklanır ve bildirimler her cihaza kendi yerel saatine göre gönderilir.</li>
     </ul>
 
     <h2>6. Haklarınız (GDPR / CCPA)</h2>
